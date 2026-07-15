@@ -1,0 +1,78 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+const NavigationBar = () => {
+    return (
+        <div>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div className="container-fluid">
+
+                    <Link className="navbar-brand" to="/">
+                        Sports Club Management
+                    </Link>
+
+                    <button
+                        className="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                    >
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div className="collapse navbar-collapse" id="navbarNav">
+
+                        <ul className="navbar-nav ms-auto">
+
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/">
+                                    Home
+                                </Link>
+                            </li>
+
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/add-player">
+                                    Add Players
+                                </Link>
+                            </li>
+
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/view-player">
+                                    View Players
+                                </Link>
+                            </li>
+
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/add-coach">
+                                    Add Coaches
+                                </Link>
+                            </li>
+
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/view-coach">
+                                    View Coaches
+                                </Link>
+                            </li>
+
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/add-team">
+                                    Add Teams
+                                </Link>
+                            </li>
+
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/view-team">
+                                    View Teams
+                                </Link>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    )
+}
+
+export default NavigationBar
