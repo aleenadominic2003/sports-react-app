@@ -17,7 +17,7 @@ function App() {
      <Routes>
       <Route path='/view-player' element={<ViewPlayer />} />
       <Route path='/view-coach' element={<ViewCoach />} />
-      <Route path='/view-team' element={<ViewTeam/>} />
+      <Route path='/view-team ' element={<ViewTeam/>} />
      </Routes>
      </BrowserRouter>
     </>
