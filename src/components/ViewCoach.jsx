@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
 
 import axios from 'axios'
+import NavigationBar from './NavigationBar'
 
 
 const ViewCoach = () => {
     const [data, changeData] = useState([])
 
     const fetchData = () => {
-        axios.post("").then(
+        axios.post("http://localhost:4000/view-coach").then(
             (response) => {
                 changeData(response.data)
             }
@@ -24,7 +25,7 @@ const ViewCoach = () => {
         
 
             <div className="container">
-            
+    <NavigationBar />      
     <div className="row">
         <div className="col-12">
 
